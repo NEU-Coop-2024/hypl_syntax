@@ -28,7 +28,7 @@ const initialText = '(popid) Varid <- Varid';
 const targetElement = document.querySelector('#editor')!;
 
 new EditorView({
-    doc: initialText,
+    doc: initialText, 
     extensions: [
         minimalSetup,
         Hypl(),
