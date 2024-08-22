@@ -1,6 +1,7 @@
 import { minimalSetup, EditorView } from 'codemirror'
 import { parser } from "./syntax.grammar"
-import { LRLanguage, LanguageSupport, indentNodeProp, foldNodeProp, foldInside, delimitedIndent } from "@codemirror/language"
+import { LRLanguage, LanguageSupport, indentNodeProp, foldNodeProp, foldInside, delimitedIndent, syntaxHighlighting } from "@codemirror/language"
+import { hyplHighlight, hyplHighlightStyle } from './highlight';
 
 export const HyplLanguage = LRLanguage.define({
     parser: parser.configure({
@@ -11,6 +12,7 @@ export const HyplLanguage = LRLanguage.define({
             foldNodeProp.add({
                 Application: foldInside,
             }),
+            hyplHighlight,
         ],
     }),
     languageData: {
@@ -21,14 +23,14 @@ export const HyplLanguage = LRLanguage.define({
 export const test = "TESTING";
 
 export function Hypl() {
-    return new LanguageSupport(HyplLanguage);
+    return new LanguageSupport(HyplLanguage, syntaxHighlighting(hyplHighlightStyle));
 }
 
 const initialText = '(popid) Varid <- Varid';
 const targetElement = document.querySelector('#editor')!;
 
 new EditorView({
-    doc: initialText, 
+    doc: initialText,
     extensions: [
         minimalSetup,
         Hypl(),
