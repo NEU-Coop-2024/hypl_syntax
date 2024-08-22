@@ -2,10 +2,10 @@ import typescript from "rollup-plugin-ts"
 import { lezer } from "@lezer/generator/rollup"
 
 export default {
-    input: "src/main.ts",
+    input: "./src/main.ts",
     external: id => id != "tslib" && !/^(\.?\/|\w:)/.test(id),
     output: [
-        { file: "dist/index.cjs", format: "cjs" },
+        { file: "./dist/index.cjs", format: "cjs" },
         { dir: "./dist", format: "es" }
     ],
     plugins: [lezer(), typescript()]
