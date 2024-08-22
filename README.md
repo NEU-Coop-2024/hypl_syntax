@@ -1,5 +1,9 @@
 # Build
 
-1. `npm install` from the top level of the repository
-2. `npx rollup -c`
-2. `npm run dev`
+Run each of the following from the top level of the repository:
+1. `npm install`
+2. `npm run build`
+
+# Run
+
+Run `npm run dev` from the top level of the repository.
