@@ -3,7 +3,7 @@
     "private": true,
     "type": "module",
     "scripts": {
-        "dev": "vite",
+        "dev": "vite serve dist",
         "build": "tsc && npx rollup -c && vite build",
         "preview": "vite preview"
     },
