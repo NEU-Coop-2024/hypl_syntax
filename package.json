@@ -2,6 +2,7 @@
     "name": "hypl_syntax",
     "private": true,
     "type": "module",
+    "version": "0.0.1",
     "scripts": {
         "dev": "vite serve dist",
         "build": "tsc && npx rollup -c && vite build",
