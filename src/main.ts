@@ -20,8 +20,6 @@ export const HyplLanguage = LRLanguage.define({
     },
 });
 
-export const test = "TESTING";
-
 export function Hypl() {
     return new LanguageSupport(HyplLanguage, syntaxHighlighting(hyplHighlightStyle));
 }
