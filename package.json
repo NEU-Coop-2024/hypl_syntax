@@ -1,5 +1,5 @@
 {
-    "name": "code-editor",
+    "name": "hypl_syntax",
     "private": true,
     "type": "module",
     "scripts": {
