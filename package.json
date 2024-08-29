@@ -3,11 +3,24 @@
     "private": true,
     "type": "module",
     "version": "0.0.1",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/NEU-Coop-2024/hypl_syntax.git"
+    },
     "scripts": {
         "dev": "vite serve dist",
         "build": "tsc && npx rollup -c && vite build",
         "preview": "vite preview"
     },
+    "files": [
+        "src/main.js",
+        "src/highlight.js",
+        "src/parser.js",
+        "src/parser.terms.js",
+        "src/syntax.grammar",
+        "src/syntax.grammar.d.ts"
+    ],
+    "main": "src/main.js",
     "devDependencies": {
         "typescript": "^4.9.3",
         "vite": "^4.0.0",
