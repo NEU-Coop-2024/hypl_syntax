@@ -20,7 +20,7 @@
         "src/syntax.grammar",
         "src/syntax.grammar.d.ts"
     ],
-    "main": "src/main.js",
+    "main": "src/main.ts",
     "devDependencies": {
         "typescript": "^4.9.3",
         "vite": "^4.0.0",
