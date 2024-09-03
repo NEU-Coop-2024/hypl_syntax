@@ -13,8 +13,8 @@
         "preview": "vite preview"
     },
     "files": [
-        "src/main.js",
-        "src/highlight.js",
+        "src/main.ts",
+        "src/highlight.ts",
         "src/parser.js",
         "src/parser.terms.js",
         "src/syntax.grammar",
