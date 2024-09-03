@@ -1,6 +1,6 @@
 {
     "name": "hypl_syntax",
-    "private": true,
+    "private": false,
     "type": "module",
     "version": "0.0.1",
     "repository": {
