@@ -10,17 +10,14 @@
     "scripts": {
         "dev": "vite serve dist",
         "build": "tsc && npx rollup -c && vite build",
-        "preview": "vite preview"
+        "preview": "vite preview",
+        "package" : "npx rollup -c && git add dist/*"
     },
     "files": [
-        "src/main.ts",
-        "src/highlight.ts",
-        "src/parser.js",
-        "src/parser.terms.js",
-        "src/syntax.grammar",
-        "src/syntax.grammar.d.ts"
+        "src/*",
+        "dist/*"
     ],
-    "main": "src/main.ts",
+    "main": "src/main.js",
     "devDependencies": {
         "typescript": "^4.9.3",
         "vite": "^4.0.0",
