@@ -25,7 +25,7 @@ export function Hypl() {
 }
 
 const initialText = '(popid) Varid <- Varid';
-const targetElement = document.querySelector('#editor')!;
+const targetElements = document.querySelector('.hypl')!;
 
 new EditorView({
     doc: initialText,
@@ -33,5 +33,5 @@ new EditorView({
         minimalSetup,
         Hypl(),
     ],
-    parent: targetElement,
+    parent: targetElements,
 });
