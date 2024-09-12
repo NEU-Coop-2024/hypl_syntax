@@ -53,14 +53,14 @@ function Hypl() {
     return new language.LanguageSupport(HyplLanguage, language.syntaxHighlighting(hyplHighlightStyle));
 }
 const initialText = '(popid) Varid <- Varid';
-const targetElement = document.querySelector('#editor');
+const targetElements = document.querySelector('.hypl');
 new codemirror.EditorView({
     doc: initialText,
     extensions: [
         codemirror.minimalSetup,
         Hypl(),
     ],
-    parent: targetElement,
+    parent: targetElements,
 });
 
 exports.Hypl = Hypl;

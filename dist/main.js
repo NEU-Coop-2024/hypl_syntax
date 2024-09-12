@@ -49,14 +49,14 @@ function Hypl() {
     return new LanguageSupport(HyplLanguage, syntaxHighlighting(hyplHighlightStyle));
 }
 const initialText = '(popid) Varid <- Varid';
-const targetElement = document.querySelector('#editor');
+const targetElements = document.querySelector('.hypl');
 new EditorView({
     doc: initialText,
     extensions: [
         minimalSetup,
         Hypl(),
     ],
-    parent: targetElement,
+    parent: targetElements,
 });
 
 export { Hypl, HyplLanguage };
