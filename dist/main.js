@@ -26,7 +26,7 @@ const hyplHighlight = styleTags({
 });
 const hyplHighlightStyle = HighlightStyle.define([
     { tag: tags.variableName, color: "#2689C7" },
-    { tag: tags.name, color: "#0909AD" },
+    { tag: tags.name, color: "#d90cfe" },
 ]);
 
 const HyplLanguage = LRLanguage.define({

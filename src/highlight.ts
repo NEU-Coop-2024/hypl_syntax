@@ -9,7 +9,7 @@ export const hyplHighlight = styleTags({
 
 export const hyplHighlightStyle = HighlightStyle.define([
   { tag: t.variableName, color: "#2689C7" },
-  { tag: t.name, color: "#0909AD" },
+  { tag: t.name, color: "#d90cfe" },
 ]);
 
 export const hyplHighlightExtension = [hyplHighlight, hyplHighlightStyle];
