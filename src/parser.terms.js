@@ -2,4 +2,5 @@
 export const
   Program = 1,
   Identifier = 2,
-  Name = 3
+  Name = 3,
+  Number = 4
