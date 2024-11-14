@@ -6,7 +6,7 @@ expression {
   Application { "(" expression* ")" }
 }
 
-NewExpression { @specialize<Identifier, "num"> expression }
+NewExpression { @specialize<Identifier, "int"> expression }
 
 @tokens {
   Identifier { $[a-z] $[a-zA-Z0-9_]* } 
